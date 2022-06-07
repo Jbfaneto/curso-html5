@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'beauty';
+    src: url(beauty_6/Beauty.otf) format('opentype'), url(beauty_6/BeautyRegular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: sans-serif;
+}
+h1 {
+    font-family: 'beauty';
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article#noticiasbr {
+            font-size:1em;
+            width:500px;
+            text-align: justify;
+            margin:auto;
+        }
+        nav ul{
+            text-align: right;
+            text-transform: uppercase;
+            left:1000px;
+        }
+        nav li{
+            display: inline-block;
+            list-style-type: disc;
+            background-color: blue;
+            box-shadow: 2px 2px black;
+            padding:5px;
+           
+        }
+        nav li:hover {
+            background-color:red;
+        }
+        nav a{
+            text-decoration:none;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            color:white;
+            
+
+        }
+
+        main{
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px black;
+        }
+        footer {
+            text-align: center;
+            background-color: black;
+            color:white;
+            clear:both;
+        }
+
+        div#bola {
+            width:100px;
+            height:100px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <h2>links</h2>
+        <nav>
+            <ul type="square">
+                <li><a href="index.html" target="_self">index</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul type="circle">
+        <li><h2>Noticias sobre o Brasil</h2></li>
+        <article id="noticiasbr">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi omnis culpa, obcaecati aliquid nemo mollitia iusto inventore alias distinctio totam, eius placeat quidem dolore debitis. Recusandae tenetur animi odit fugit.</p>
+        </article>
+        <li><h2>Noticias sobre outros paises</h2></li>
+        <article id="noticiasoutros">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae laborum quisquam maiores id non pariatur dolorum exercitationem est, tempore reiciendis quo aliquam, modi cupiditate ipsa fugiat. Minus ullam consectetur culpa.</p>
+        </article>
+        </ul>
+    </main>
+    <footer>
+        Feito por joão
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

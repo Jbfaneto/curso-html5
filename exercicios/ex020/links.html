@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editando Links</title>
+    <style>
+        body {
+            font: italic bold 1.5em arial;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+            color:blue;
+        }
+        a:visited {
+            color: purple;
+        }
+        .especial:hover {
+            background-color: red;
+            color:white;
+            text-decoration:wavy;
+        }
+        .especial:hover::before{
+            font-weight: lighter;
+            content: '<<';
+        }
+        .especial:hover::after {
+            font-weight:lighter;
+            content: '>>';
+        }
+        .firstletter::first-letter{
+            font-size:6em;
+            font-weight: bolder;
+            text-shadow: 5px 5px blue;
+        }
+        p{
+            margin: auto;
+            width: 500px;
+
+        }
+        h1{
+            margin-top:5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="firstletter">Editando links com HTML e CSS</h1>
+    <p>Links interessantes para serem editados <a href="https://www.facebook.com" target="_blank">link Facebook</a></p>
+    <p>Outro link é <a href="https://www.instagram.com" target="_blank">link instagram</a></p>
+    <p> Criando um link especial para conseguir trabalhar ele, de uma olhada nesse <a href="https://www.youtube.com" class="especial" target="_blank">link do curso</a></p>
+</body>
+</html>
